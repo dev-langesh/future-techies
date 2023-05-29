@@ -29,7 +29,7 @@ const Internship = () => {
         Are you passionate about embedded systems and looking to gain practical experience? Our internship program offers an exciting opportunity to work on real-world projects and learn from industry experts.
       </p>
       <p className="mb-6">
-        As an intern at EmbeddedTech, you will have the chance to collaborate with our talented team and contribute to the development of cutting-edge embedded products. Whether you're interested in hardware design, firmware development, or software programming, our internship program provides a supportive and engaging environment for your growth.
+        As an intern at EmbeddedTech, you will have the chance to collaborate with our talented team and contribute to the development of cutting-edge embedded products. Whether you&apos;re interested in hardware design, firmware development, or software programming, our internship program provides a supportive and engaging environment for your growth.
       </p>
       <Benefits />
       <p>
