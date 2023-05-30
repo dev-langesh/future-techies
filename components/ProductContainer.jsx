@@ -1,46 +1,52 @@
 import React from "react";
+import AddToCartButton from "./CartButton";
 
 const ProductShowcase = () => {
   // Sample product data
- const products = [
-  {
-    id: 1,
-    name: "Arduino UNO R3",
-    description: "Versatile microcontroller for embedded systems",
-    image: "https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/F7697409-01",
-    price: 499,
-  },
-  {
-    id: 2,
-    name: "Raspberry Pi 4",
-    description: "Powerful single-board computer for IoT projects",
-    image: "https://m.media-amazon.com/images/I/61mRJm8+c4L._SX342_.jpg",
-    price: 1499,
-  },
-  {
-    id: 3,
-    name: "ESP32 Development Board",
-    description: "Feature-rich IoT development board with built-in Wi-Fi and Bluetooth",
-    image: "https://www.electronicscomp.com/image/cache/catalog/esp32-development-board-400x400.jpg",
-    price: 799,
-  },
-  {
-    id: 4,
-    name: "Adafruit BME280 Sensor",
-    description: "High-precision environmental sensor for temperature, humidity, and pressure",
-    image: "https://cdn11.bigcommerce.com/s-3fd3md1ghs/images/stencil/640w/products/27478/8417/1893__64708.1566374640.jpg?c=2",
-    price: 299,
-  },
-  {
-    id: 5,
-    name: "Particle Photon",
-    description: "Wi-Fi-enabled IoT development board for cloud-connected projects",
-    image: "https://m.media-amazon.com/images/I/51IipfHJ0LL.jpg",
-    price: 899,
-  },
-  // Add more products as needed
-];
-
+  const products = [
+    {
+      id: 1,
+      name: "Arduino UNO R3",
+      description: "Versatile microcontroller for embedded systems",
+      image:
+        "https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/F7697409-01",
+      price: 499,
+    },
+    {
+      id: 2,
+      name: "Raspberry Pi 4",
+      description: "Powerful single-board computer for IoT projects",
+      image: "https://m.media-amazon.com/images/I/61mRJm8+c4L._SX342_.jpg",
+      price: 1499,
+    },
+    {
+      id: 3,
+      name: "ESP32 Development Board",
+      description:
+        "Feature-rich IoT development board with built-in Wi-Fi and Bluetooth",
+      image:
+        "https://www.electronicscomp.com/image/cache/catalog/esp32-development-board-400x400.jpg",
+      price: 799,
+    },
+    {
+      id: 4,
+      name: "Adafruit BME280 Sensor",
+      description:
+        "High-precision environmental sensor for temperature, humidity, and pressure",
+      image:
+        "https://cdn11.bigcommerce.com/s-3fd3md1ghs/images/stencil/640w/products/27478/8417/1893__64708.1566374640.jpg?c=2",
+      price: 299,
+    },
+    {
+      id: 5,
+      name: "Particle Photon",
+      description:
+        "Wi-Fi-enabled IoT development board for cloud-connected projects",
+      image: "https://m.media-amazon.com/images/I/51IipfHJ0LL.jpg",
+      price: 899,
+    },
+    // Add more products as needed
+  ];
 
   const formatPrice = (price) => {
     // Convert price to Indian Rupees format
@@ -70,12 +76,11 @@ const ProductShowcase = () => {
                 {product.name}
               </h3>
               <p className="text-gray-600 mb-4">{product.description}</p>
-              <p className="text-gray-800 font-bold">
-                {formatPrice(product.price)}
-              </p>
+
               <button className="bg-blue-900 hover:bg-blue-800 text-white py-2 px-4 rounded mt-4">
                 Add to Cart
               </button>
+              <AddToCartButton />
             </div>
           ))}
         </div>
@@ -85,4 +90,3 @@ const ProductShowcase = () => {
 };
 
 export default ProductShowcase;
- 

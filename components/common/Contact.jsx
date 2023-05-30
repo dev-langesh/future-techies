@@ -16,7 +16,7 @@ const ContactUs = () => {
               Contact Information
             </h3>
             <p className="text-gray-700">
-              Address: EPIP zone, SLS Square, Bengaluru, India
+              Address: Brigade tower, Graphite Main Road , Bengaluru{" "}
             </p>
           </div>
           <div className="w-full md:w-1/2">
