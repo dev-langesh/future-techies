@@ -5,7 +5,11 @@ const AppBar = () => {
   return (
     <header className="bg-gray-800">
       <nav className="container mx-auto px-4 py-3 flex items-center justify-between">
-        <Link href="/" className="text-white font-bold text-xl mr-4">
+        <Link
+          href="/"
+          className="text-white font-bold text-xl mr-4 flex items-center gap-4"
+        >
+          <img width="50px" src="/future.png" />
           Future Techies
         </Link>
         <input
